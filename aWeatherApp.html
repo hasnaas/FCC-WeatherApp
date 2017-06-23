@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg">
+<link rel="stylesheet" href="aWeatherApp.css">
+<title>WeatherApp</title>
+</head>
+
+<body>
+<div class="container">
+  <h1 class="text-center">City</h1>
+  <h4 id="cn" class="text-center">Country</h4>
+  <div id="current" class="row">
+  <div class="col-xs-6 text-center ">
+    <canvas id="icon0" width="100" height="100"></canvas>
+    <br>
+    <p id="weather" class="text-capitalize">description</p>
+    </div>
+    <div class="col-xs-6 text-center">
+      <span id="temp">temp</span>
+      <i id="c" class="wi wi-celsius"></i>
+      <i id="f" class="wi wi-fahrenheit" style="color:#c0c0c0;"></i>
+      <br><br>
+      <span id="humidity"></span>
+      <i class="wi wi-humidity"></i>
+      
+    </div>
+  </div>
+  <hr>
+  <div id="forecast" class="row text-center">
+    <div id="d1" class="col-xs-4">
+      <h4 >Day 1</h4><br>
+      <canvas id="icon1" width="70" height="70"></canvas><br>
+      <span> temp</span><br>
+      
+      <div >humidity</div>
+    </div>
+    <div id="d2" class="col-xs-4">
+      <h4>Day 2</h4><br>
+      <canvas id="icon2" width="70" height="70"></canvas><br>
+      <span> temp</span><br>
+      
+      <div >humidity</div>
+    </div>
+    <div id="d3" class="col-xs-4">
+      <h4>Day 3</h4><br>
+      <canvas id="icon3" width="70" height="70"></canvas><br>
+      <span> temp</span><br>
+        <div >humidity</div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container">
+  <h6 class="text-center">Weather data and icons provided by <a rel="nofollow" rel="noreferrer"href="https://darksky.net" target="_blank">DarkSky</a></h6>
+  <h6 class="text-center">Additional icons provided by <a rel="nofollow" rel="noreferrer"href="https://erikflowers.github.io/weather-icons/" target="_blank">ErikFlowers</a></h6>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" ></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js" ></script>
+<script type="text/javascript" src="aWeatherApp.js" async></script>
+
+</body>
+</html>

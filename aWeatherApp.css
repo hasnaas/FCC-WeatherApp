@@ -1,0 +1,86 @@
+*{
+  border-sizing:border-box;
+}
+body{
+  background-color:#c0c0c0;
+  font-family:Verdana;
+  margin-top:20px;
+}
+
+.container{
+  max-width:60%;
+  background-color:#FFF;
+  padding-bottom:20px;
+  border-radius:5px;
+  border:2px solid Teal;
+  margin-top:10px;
+}
+a, a:hover{
+  color:Teal;
+  text-decoration:none;
+}
+#current{
+  margin-top:30px;
+  margin-bottom:10px;
+}
+i{
+  font-size:40px;
+  color:Teal;
+}
+#currentw{
+  font-size:66px;
+}
+#weather{
+  font-size:18px;
+}
+#temp{
+  font-size:40px;
+}
+#tt{
+  color:fuchsia;
+  cursor:pointer;
+}
+#humidity{
+  font-size:18px;
+}
+hr{
+  border:1px solid #c0c0c0;;
+}
+
+#forcast{
+  margin-top:20px;
+  margin-bottom:20px;
+  padding-bottom:20px;
+}
+.forecast{
+  font-size:16px !important;
+}
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+      .container{ max-width:90%;}
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+      .container{ max-width:90%;}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      .container{ max-width:70%;}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      .container{ max-width:60%;}
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+.container{ max-width:50%;}
+    }
